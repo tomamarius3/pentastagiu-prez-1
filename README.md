@@ -1,1 +1,1 @@
-# my-new-repo-1
+# Prezentare #1 PentaStagiu final 
