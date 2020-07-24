@@ -1,15 +1,3 @@
-<?php
-
-    require "functions.php";
-    require "database.php";
-
-    $statement = $pdo->prepare("SELECT * FROM `books` WHERE `id` = ?");
-
-    $statement->execute([$_GET['id']]);
-
-    $book = $statement->fetch(PDO::FETCH_OBJ);
-
-?>
 <html>
 <head>
     <title>Editeaza o carte</title>
@@ -18,7 +6,7 @@
 <body>
 <div class="container">
     <div class="col-md-12">
-        <form action="/update.php" method="POST" >
+        <form action="/update" method="POST" >
             <input type="hidden" name="id" value="<?php echo $book->id;?>"/>
             <label for="title">Titlu</label>
             <input type="text" id="titlu" name="title" value="<?php echo $book->title;?>"/>

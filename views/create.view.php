@@ -6,7 +6,7 @@
     <body>
         <div class="container">
             <div class="col-md-12">
-                <form action="/store.php" method="POST" >
+                <form action="/store" method="POST" >
                     <label for="title">Titlu</label>
                     <input type="text" id="titlu" name="title"/>
                     <label for="author">Autor</label>
